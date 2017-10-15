@@ -1,0 +1,119 @@
+// 变量清单
+@import "./setting.less";
+// 清除浏览器默认样式
+@import "./reset.less";
+// 兼容各个移动端浏览器样式
+@import "./normalize.less";
+
+//适配的媒体查询
+@media screen and (width: 320px) {
+  html {
+    font-size: 320px/20;
+  }
+}
+@media screen and (width: 360px) {
+  html {
+    font-size: 360px/20;
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 375px/20;
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: 414px/ 20;
+  }
+}
+
+
+// 32 = 640/20  // 640 是设计图的宽度尺寸， 20是分成20份
+
+// 头部
+header {
+  position: relative;
+  width: 100%;
+  height: (88rem/32);
+  background-color: @headerBg;
+  line-height: (88rem/32);
+  a {
+    color: @white;
+    font-size: (32rem/32);
+    margin-left: (56rem/32);
+    i {
+      position: absolute;
+      top: (28rem/32);
+      left: (20rem/32);
+      width: (20rem/32);
+      height: (32rem/32);
+      background-image: url("../image/back.png");
+      background-repeat: no-repeat;
+      background-size: (20rem/32) (32rem/32);
+    }
+  }
+}
+
+// 内容
+main {
+  width: 100%;
+  padding: (15rem/32) (24rem/32) 0;
+  box-sizing: border-box;
+  .all {
+    width: 100%;
+  }
+  .all-header {
+    width: 100%;
+    height: (80rem/32);
+    line-height: (80rem/32);
+    font-size: (28rem/32);
+    h2 {
+      float: left;
+      color: @black;
+      font-weight: normal;
+    }
+    span {
+      float: right;
+      color: @quantityColor;
+    }
+  }
+  .all-add {
+    width: 100%;
+    height: (224rem/32);
+    border: 3px dashed @allBorderColor;
+    box-sizing: border-box;
+    background-color: @white;
+    background-image: url("../image/add.png");
+    background-repeat: no-repeat;
+    background-position: center (36rem/32);
+    background-size: (104rem/32) (104rem/32);
+    span {
+      display: block;
+      text-align: center;
+      font-size: (26rem/32);
+      color: @allAddColor;
+      margin-top: (156rem/32);
+    }
+  }
+}
+
+
+// 底部
+footer {
+  width: 100%;
+  color: @footerColor;
+  padding: 0 (24rem/32);
+  margin-top: (115rem/32);
+  h3 {
+    width: 100%;
+    font-size: (24rem/32);
+    line-height: (40rem/32);
+  }
+  p {
+    width: 100%;
+    font-size: (24rem/32);
+    line-height: (40rem/32);
+  }
+}
+
+
